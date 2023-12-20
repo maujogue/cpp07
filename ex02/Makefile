@@ -9,12 +9,12 @@ BG_RED	 				= \033[41m
 BG_GREEN 				= \033[42m
 BG_BLUE 				= \033[46m
 
-NAME					= iter
+NAME					= array
 
 BUILD_DIR				= build/
 
 HEADER_DIR				= header
-HEADER_FILES			= iter.tpp
+HEADER_FILES			= Array.hpp
 HEADER					= $(addprefix $(HEADER_DIR)/,$(HEADER_FILES))
 
 DIR						= src/
