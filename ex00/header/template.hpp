@@ -13,9 +13,9 @@ T const &min(T const & x, T const & y) {
 	return (x < y ? x : y);
 }
 
-template< typename T1, typename T2 >
-void	swap(T1 & t1, T2 & t2){
-	T1 t3 = t1;
+template< typename T>
+void	swap(T & t1, T & t2){
+	T t3 = t1;
 	t1 = t2;
 	t2 = t3;
 }

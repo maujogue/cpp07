@@ -1,7 +1,21 @@
 #include "template.hpp"
 
+class test {
+	private:
+		int _n;
+	public:
+		test(int n): _n(n){};
+		int get_n( void ) const { return (_n);};
+};
+
 int main( void ) 
 {
+
+	test A(69);
+	test B(42);
+	swap(A, B);
+	std::cout << "A = " << A.get_n() << std::endl;
+	std::cout << "B = " << B.get_n() << std::endl;
 	int a = 2;
 	int b = 3;
 	::swap( a, b );
