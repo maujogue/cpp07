@@ -15,7 +15,7 @@ T const &min(T const & x, T const & y) {
 
 template< typename T1, typename T2 >
 void	swap(T1 & t1, T2 & t2){
-	const T1 t3 = t1;
+	T1 t3 = t1;
 	t1 = t2;
 	t2 = t3;
 }
