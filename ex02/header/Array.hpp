@@ -20,8 +20,11 @@ class Array {
 		};
 
 		Array& operator=(Array const & src) {
-			if (*this != src){
-				for (unsigned int i = 0; i < src._size; i++)
+			this->_size = src._size;
+			delete this->_tab;
+			this->_tab = new T[this->_size];
+			if (this != &src){
+				for (unsigned int i = 0; i < this->_size; i++)
 					this->_tab[i] = src._tab[i];
 			}
 			return (*this);
